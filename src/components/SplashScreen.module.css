@@ -1,0 +1,45 @@
+.splashContainer {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: linear-gradient(135deg, #C9793F 0%, #E0985E 50%, #F0B378 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+.splashContainer.hiding {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.logoText {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #fff;
+  display: flex;
+  gap: 10px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.sunset {
+  color: #fff;
+}
+
+.bay {
+  color: #2B2420;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+  .logoText {
+    font-size: 2rem;
+  }
+}

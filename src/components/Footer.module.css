@@ -1,0 +1,70 @@
+.footer {
+  background-color: #2B2420;
+  color: #E8DFD1;
+  padding-top: 60px;
+}
+
+.footerContainer {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 50px;
+}
+
+.footerLogo {
+  font-size: 1.6rem;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+
+.logoHighlight {
+  color: var(--primary-color);
+}
+
+.footerBrand p {
+  color: #B8AC9C;
+  margin-bottom: 6px;
+}
+
+.footerInfo h3, .footerSocial h3 {
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.footerInfo p {
+  color: #B8AC9C;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.socialLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.socialLinks a {
+  color: #B8AC9C;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.socialLinks a:hover {
+  color: var(--primary-color);
+}
+
+.footerBottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 22px 0;
+  text-align: center;
+  color: #8A7E6F;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 800px) {
+  .footerContainer {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}

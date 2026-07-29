@@ -1,0 +1,90 @@
+.pageHero {
+  padding: 70px 0 40px 0;
+  text-align: center;
+}
+
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 90px;
+}
+
+.quickCard {
+  background-color: var(--bg-light);
+  border-radius: 20px;
+  padding: 34px;
+  box-shadow: 0 10px 30px rgba(43,36,32,0.06);
+  margin-bottom: 20px;
+}
+
+.quickCard h3 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.quickCard p {
+  color: var(--text-light);
+  margin-bottom: 16px;
+}
+
+.noticeBox {
+  background-color: var(--bg-dark);
+  border-radius: 16px;
+  padding: 22px;
+  color: var(--text-light);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.formCard {
+  background-color: var(--bg-light);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(43,36,32,0.06);
+}
+
+.formRow {
+  margin-bottom: 18px;
+}
+
+.formRow label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-size: 0.92rem;
+}
+
+.formRow input,
+.formRow select,
+.formRow textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  font-family: inherit;
+  font-size: 0.95rem;
+  background-color: var(--bg-color);
+}
+
+.formRow2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.successBox {
+  background-color: #EAF6EC;
+  color: #2F7D42;
+  padding: 16px;
+  border-radius: 12px;
+  margin-top: 16px;
+  text-align: center;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .wrap { grid-template-columns: 1fr; }
+  .formRow2 { grid-template-columns: 1fr; }
+}

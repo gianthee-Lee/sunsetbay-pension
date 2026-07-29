@@ -1,0 +1,126 @@
+.header {
+  background-color: rgba(251, 247, 241, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: var(--text-main);
+  padding: 18px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 20px rgba(43, 36, 32, 0.06);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logoText {
+  font-size: 1.6rem;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+}
+
+.logoHighlight {
+  color: var(--primary-color);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.navList {
+  display: flex;
+  gap: 34px;
+}
+
+.navLink {
+  font-size: 1.02rem;
+  font-weight: 600;
+  position: relative;
+  padding: 5px 0;
+  white-space: nowrap;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.headerActionsDesktop {
+  display: flex;
+  gap: 15px;
+}
+
+.headerActionsMobile {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  color: var(--text-main);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .hamburger {
+    display: block;
+  }
+
+  .headerActionsDesktop {
+    display: none;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-light);
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(43, 36, 32, 0.08);
+    display: none;
+  }
+
+  .nav.navOpen {
+    display: flex;
+  }
+
+  .navList {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .navLink {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .headerActionsMobile {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
