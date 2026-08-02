@@ -8,7 +8,7 @@ const defaultData = {
     heroTitle1: "포항 바다를 마당처럼",
     heroTitle2: "선셋베이펜션",
     heroSubtitle: "오션뷰 독채형 펜션 / 프라이빗 바비큐 테라스 / 도심 속 힐링",
-    heroImage: img("photo-1605644641464-80618f2d8ef6"),
+    heroImage: img("photo-1734387981942-06a25bf3b3d2"),
   },
   about: {
     title: "바다와 가장 가까운 쉼표",

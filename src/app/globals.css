@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #C9793F; /* Sunset terracotta */
-  --primary-hover: #AD6530;
-  --bg-color: #FBF7F1;
-  --bg-dark: #F1E7D8;
+  --primary-color: #E8935C; /* Sunset peach-coral */
+  --primary-hover: #D97A3F;
+  --bg-color: #FFFFFF;
+  --bg-dark: #FDF3EA;
   --bg-light: #FFFFFF;
   --text-main: #2B2420;
   --text-light: #857A6D;
@@ -76,13 +76,13 @@ img {
   font-weight: 700;
   font-size: 1.05rem;
   transition: all 0.3s ease;
-  box-shadow: 0 6px 16px rgba(201, 121, 63, 0.25);
+  box-shadow: 0 6px 16px rgba(232, 147, 92, 0.25);
 }
 
 .btn-primary:hover {
   background-color: var(--primary-hover);
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(201, 121, 63, 0.32);
+  box-shadow: 0 8px 20px rgba(232, 147, 92, 0.32);
 }
 
 .btn-outline {

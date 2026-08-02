@@ -1,5 +1,5 @@
 .header {
-  background-color: rgba(251, 247, 241, 0.85);
+  background-color: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   color: var(--text-main);
